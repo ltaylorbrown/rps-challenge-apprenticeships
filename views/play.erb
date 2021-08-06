@@ -1,9 +1,15 @@
-<h1> Bring it on <%= @player_name %>!! </h>
+<h1> Bring it on <%= $player.name %>!! </h>
 
 <h2>Rock, Paper, or Scissors.Choose!</h2>
 
-<form action='play' method='post'>
-  <input type='submit' value='Rock'>
-  <input type='submit' value='Paper'>
-  <input type='submit' value='Scissors'>
+<form action='/rock' method="post">
+  <input type="submit" name="" value="Rock">
+</form>
+
+<form action='/paper' method="post">
+  <input type="submit" name="" value="Paper">
+</form>
+
+<form action='/scissors' method="post">
+  <input type="submit" name="" value="Scissors">
 </form>
